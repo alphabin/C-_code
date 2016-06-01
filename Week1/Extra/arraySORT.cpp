@@ -2,8 +2,7 @@
 #include <string>
 #include <time.h>
 #include <fstream>
-#include <stdlib.h>
-#include <stdio.h>
+
 
 using namespace std;
 
