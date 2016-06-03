@@ -11,6 +11,7 @@ public:
     card(); //constructor for the card to be intialized
     card(int,int);
     void getcard();
+
     
 private:
     enum suit{
@@ -39,6 +40,7 @@ private:
     void getcard(suit,rank);// make one card depending on the array
     suit valS;
     rank valR;
+    
 
     
 

@@ -20,7 +20,7 @@ card::card(int n,int r){
     //getcard(valS,valR);
 }
 
-
+//It internal helper for the print is the printer function
 void card::getcard(suit n,rank r){
     
     if (n == 0)
@@ -65,3 +65,7 @@ void card::getcard(){
     getcard(valS,valR);
     
 }
+
+
+
+
