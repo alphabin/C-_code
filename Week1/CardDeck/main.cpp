@@ -1,24 +1,38 @@
 
+
+//============================================================================
+// Name        : Assignmnet_1.2.cpp
+// Author      : Chatura Ahangama
+// Date        : 5/31/2016
+// Copyright   : Do Not Steal Ma Code without asking ...Meow
+// Description : Week 1 Saddleback C++, Ansi-style
+//============================================================================
+
+
 #include "card.h"
 #include <iostream>
 
 
 using namespace std;
 
+//Local intilization functions
 void initCard(card num[]);
 void shuffleCard(card nums[]);
 void printDeck(card tnums[]);
+void cheatDeck(card nums[]);
 
 
 int main()
 {
-    
-    card nums[52];
-    initCard(nums); //Populates the cards intialization
-    cout<<"|-------------|"<<endl;
+   
+    cout<<"|-------------|"<<endl; //Welcome Banner
     cout<<"|Start of Deck|"<<endl;
     cout<<"|-------------|"<<endl;
-    printDeck(nums);
+    
+    
+    card nums[52]; //Array of 23 cards type
+    initCard(nums); //Populates the cards,the whole array of 52 elements meet intialization
+    printDeck(nums); //Prints it
    
     
     //Back to normal loop

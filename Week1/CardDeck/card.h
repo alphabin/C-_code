@@ -1,3 +1,14 @@
+
+
+//============================================================================
+// Name        : Assignmnet_1.2.cpp
+// Author      : Chatura Ahangama
+// Date        : 5/31/2016
+// Copyright   : Do Not Steal Ma Code without asking ...Meow
+// Description : Week 1 Saddleback C++, Ansi-style
+//============================================================================
+
+
 #ifndef CARD_H
 #define CARD_H
 #define CSIZE 52
