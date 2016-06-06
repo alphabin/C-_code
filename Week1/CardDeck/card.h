@@ -11,7 +11,7 @@
 
 #ifndef CARD_H
 #define CARD_H
-#define CSIZE 52
+
 
 
 
@@ -19,8 +19,8 @@
 class card
 {
 public:
-    card(); //constructor for the card to be intialized
-    card(int,int);
+    card(); //constructor for the card to be intialized, deafult const
+    card(int,int); //case where both are inserted
     void getcard();
 
     
@@ -49,8 +49,8 @@ private:
     };
     
     void getcard(suit,rank);// make one card depending on the array
-    suit valS;
-    rank valR;
+    suit valS;  //suit type enum
+    rank valR;  //rank type enum
     
 
     
