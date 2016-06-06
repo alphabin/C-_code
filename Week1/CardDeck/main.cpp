@@ -18,8 +18,8 @@ using namespace std;
 
 void initCard(card num[]);//Local intilization function prototype
 void shuffleCard(card nums[]); //Local shuffle deck function prototype
-void printDeck(card tnums[]); //local print deck fucntion prototype
-void cheatDeck(card nums[],int );
+void printDeck(card tnums[]); //Local print deck fucntion prototype
+void cheatDeck(card nums[],int ); //Local cheat to match shuffle
 
 
 
@@ -31,7 +31,9 @@ int main()
     cout<<"|-------------|"<<endl;
     
     
-    card nums[52]; //Array of 23 cards type
+    
+    const int ncards=52; //Defines the card deck size
+    card nums[ncards]; //Array of 23 cards type
     initCard(nums); //Populates the cards,the whole array of 52 elements meet intialization
     printDeck(nums); //Prints the Deck
     
@@ -86,14 +88,15 @@ void shuffleCard(card nums[52]){  //Takes in an array to do a one shuffle
 }
 
 void printDeck(card tnums[52]){   //Takes in an array to  print out all the elements
-    cout<<"------33------"<<endl;
+    cout<<"33------33------33"<<endl; //Banner Frame top
+    
     for(int tnum=0;tnum<52;tnum++)    //Iterates all the elements in the card to print out one by one
     {
         cout<<"Card "<<tnum +1 << " ";  //For print notation for readability
         tnums[tnum].getcard();   //Prints through the
         
     }
-    cout<<"------33------"<<endl;
+    cout<<"33------33------33"<<endl; //Banner Frame bottom
     
 }
 
