@@ -12,6 +12,12 @@
 #ifndef CARD_H
 #define CARD_H
 
+
+const int cSize=52;  //Full deck
+const int hcSize=26; //Half of a Deck
+const int nSuit=4;
+const int nRank=13;
+
 class card{
 
 
@@ -20,8 +26,8 @@ public:
     void initCard(); //Local intilization function prototype
     void printDeck(); //Prints the deck
     void shuffleCard(); //Local shuffle deck function prototype
-    void equal(card Deck2); //checks equality of two card types
-    
+    void equal(card Deck2); //Checks equality of two card types
+    void shuffleUI(card myDeck); //Enters the user interface for easier playability
 private:
     enum suit{
         Hearts,  //0
@@ -53,7 +59,7 @@ private:
     };
         
    
-    sCard num[52]; //Declare the array of structure of sCard(single card)
+    sCard num[cSize]; //Declare the array of structure of sCard(single card)
     
 
    

@@ -23,22 +23,9 @@ int main()
     
     
     card myDeck1;
-    card myDeck2;
-   
-    
-   
-    myDeck1.printDeck();//Array of 23 cards type
-    
-    
-    //myDeck1.initCard(); //Not needed the constructor takes care of this but can be called
-    //myDeck2.initCard(); //Not needed the constructor takes care of this but can be called
-    //int n=2; //How many times for to shuffle
-    //myDeck1.shuffleCard(n);
-    myDeck1.shuffleCard();
-    myDeck1.printDeck();
-    myDeck1.equal(myDeck2);
-    myDeck1.equal(myDeck1);
-
+    card myDeck2;//Going to be the reference
+    myDeck1.printDeck();//Prints the intial Array of 23 cards type
+    myDeck1.shuffleUI(myDeck2);//Enters the User interface for Easier portability
     
     
     return 0;

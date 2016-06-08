@@ -13,6 +13,7 @@
 #include <string.h>
 
 
+
 using namespace std;
 
 card::card(){
@@ -26,8 +27,8 @@ void card::initCard()
         int num1=0;//Declaring the intial Deck
         
         
-        for(int i=0;i<4;i++) //Iterator Represents the suit
-            for(int j=0;j<13;j++) //Iterator Represents the rank of the card
+        for(int i=0;i<nSuit;i++) //Iterator Represents the suit
+            for(int j=0;j<nRank;j++) //Iterator Represents the rank of the card
             {
                 //cout<<"Card "<<num +1 << " ";
                 num[num1].valS = suit(i);
@@ -40,22 +41,22 @@ void card::initCard()
 
 
 void card::shuffleCard(){  //Takes in an array to do a one shuffle
-     sCard tnums[52]; //Declaring the temp Deck of size 52, this is done as a security measure
+     sCard tnums[cSize]; //Declaring the temp Deck of size 52, this is done as a security measure
     
-    for(int num1=0;num1<26;num1++) //Start Populating the deck at the stage , Part 1
+    for(int num1=0;num1<hcSize;num1++) //Start Populating the deck at the stage , Part 1
     {
         tnums[num1+num1] = num[num1]; // The card intialization based on the odd numbers
         
     }
     int ins=1;
-    for(int num1=26;num1<52;num1++) // Part 2
+    for(int num1=hcSize;num1<cSize;num1++) // Part 2
     {
         
         tnums[ins] = num[num1];  // The card intialization based on the even numbers
         ins=ins+2;
         
     }
-    for(int tnum=0;tnum<52;tnum++)
+    for(int tnum=0;tnum<cSize;tnum++)
     {
         num[tnum]=tnums[tnum]; // Assigns the temporary array into the permenent nums array to be referenced
     }
@@ -64,20 +65,10 @@ void card::shuffleCard(){  //Takes in an array to do a one shuffle
 }
 
 void card::equal(card num1){
-    cout<<"Comparing the Decks"<<endl;
-   /* int c=memcmp(&num,&num1, sizeof(52));
-    if ((c) == 0)
-    {
-        cout<<"Matched Deck"<<endl;
-    }
-    else
-    {
-        cout<<"NOT Matched Deck"<<endl;
-    }
-    */
     
+    cout<<"Comparing the Decks"<<endl;
     bool equal=false;
-    for(int tnum=1;tnum<51;tnum++)    //Iterates all the elements in the card to print out one by one
+    for(int tnum=0;tnum<cSize-1;tnum++)    //Iterates all the elements in the card to print out one by one
     {
         
         int n = num[tnum].valS;
@@ -86,23 +77,58 @@ void card::equal(card num1){
         int n1 = num1.num[tnum].valS;
         int r1 = num1.num[tnum].valR;
         
-        if (n==n1)
+        if (n==n1){
             if(r==r1)
+            {
                 equal=true;
-        
+            }
+            else{
+                equal=false;
+            }
+        }
     }
-    if (equal==true)
+    if (equal==true){
+        cout<<"------------------------"<<endl;
         cout<<"The Card Deck is a Match"<<endl;
-    else
+        cout<<"------------------------"<<endl;
+    }
+    else{
+        cout<<"--------------------------"<<endl;
         cout<<"The Card Deck is NOT Match"<<endl;
-}
+        cout<<"--------------------------"<<endl;
+    }
+    
+    }
 
+void card::shuffleUI(card myDeck2){
+    
+    int n;
+    do{
+        cout<<"Do you want keep shuffling ? (1 to continue / 0 to quit / 8 to Match the Deck) " << endl;
+        cin>>n;
+        if (n!=0){
+            shuffleCard(); //User calls the shuffle the first time
+            printDeck(); //Prints the first shuffle
+            equal(myDeck2); //User calls to check if the first shuffl matched
+            if (n > 1)
+                for (int i=0;i<n-1;i++)
+                {
+                    cout<<"The Iteration : "<<i+1+1<<endl;
+                    shuffleCard();
+                    printDeck();
+                    equal(myDeck2);
+                }
+        }
+        
+    }while(n>0);
+
+}
 
 
 void card::printDeck(){   //Takes in an array to  print out all the elements
     cout<<"!------!Start of the Deck!------!"<<endl; //Banner Frame top
     
-    for(int tnum=0;tnum<52;tnum++)    //Iterates all the elements in the card to print out one by one
+    for(int tnum=0;tnum<cSize;tnum++)    //Iterates all the elements in the card to print out one by one
     {
         cout<<"Card "<<tnum +1 << " ";  //For print notation for readability
         int n = num[tnum].valS;
