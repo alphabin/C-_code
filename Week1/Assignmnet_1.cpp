@@ -55,12 +55,9 @@ int main() {
     //Out put the triple of the sum
 	cout << "The Triple of the number is " << sum3 << endl;
 	//The reverse of the number is
-	cout << "The Triple of the number is " << reverse << endl;
+	cout << "The Reverser of the original number is " << reverse << endl;
 
 
-
-	cout << "This is the first Prgram Ex B \n" ;
-	cout << "================================ \n" ;
 
 
 

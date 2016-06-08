@@ -1,0 +1,9 @@
+This is the first Prgram Ex A 
+================================ 
+The Random number 611 
+Random Numbers are 6 1 1 
+The Sum of the random numbers are 6 +  1 +  1 = 8 
+The Triple of the number is 512
+The Reverser of the original number is 116
+
+================================ 
