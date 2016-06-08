@@ -12,17 +12,15 @@
 #ifndef CARD_H
 #define CARD_H
 
+class card{
 
 
-
-
-class card
-{
 public:
     card(); //constructor for the card to be intialized, deafult const
-    card(int,int); //case where both are inserted
-    void getcard();
-
+    void initCard(); //Local intilization function prototype
+    void printDeck(); //Prints the deck
+    void shuffleCard(); //Local shuffle deck function prototype
+    void equal(card Deck2); //checks equality of two card types
     
 private:
     enum suit{
@@ -48,11 +46,14 @@ private:
         King     //12
     };
     
-    void getcard(suit,rank);// make one card depending on the array
-    suit valS;  //suit type enum
-    rank valR;  //rank type enum
-    
-
+    struct sCard{
+        suit valS;
+        rank valR;
+        
+    };
+        
+   
+    sCard num[52]; //Declare the array of structure of sCard(single card)
     
 
    

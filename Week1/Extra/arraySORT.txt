@@ -1,0 +1,35 @@
+Unsorted Array 
+61
+83
+48
+85
+23
+70
+92
+37
+36
+95
+Sorted Array 
+23
+36
+37
+48
+61
+70
+83
+85
+92
+95
+Writing the Array ./array.txt 
+Reading the Array 
+Printing the Read Array 
+23
+36
+37
+48
+61
+70
+83
+85
+92
+95
