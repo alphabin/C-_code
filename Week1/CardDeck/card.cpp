@@ -108,30 +108,35 @@ void card::shuffleUI(card myDeck2){
         cout<<"Do you want keep shuffling ? (1 to continue / 0 to quit / try to Match the Deck '99') " << endl;
         cin>>n;
         if (n!=0){
-            shuffleCard(); //User calls the shuffle the first time
-            printDeck(); //Prints the first shuffle
-            equal(myDeck2); //User calls to check if the first shuffl matched
             
-            
+                if (n==1)
+                {
+                    shuffleCard(); //User calls the shuffle the first time
+                    printDeck(); //Prints the first shuffle
+                    equal(myDeck2); //User calls to check if the first shuffl matched
+                }
                 if ( n == 99)
                 {
-                    
                     do
                     {
                         cout<<"The Iteration : "<<numC<<endl;
                         shuffleCard();
-                        printDeck();
                         equal(myDeck2);
+                        
+                        if(numC%8==0)
+                        printDeck();
+                        
                     }while((numC%8)!=0);
                     
                 }
-               else
-                for (int i=0;i<n-1;i++)
-                {
-                    cout<<"The Iteration : "<<i+1+1<<endl;
+               if( (n!=1) && (n!=99) )
+                 for (int i=1;i<=n;i++)
+                   {
+                    cout<<"The Iteration : "<<i+1<<endl;
                     shuffleCard();
-                    printDeck();
                     equal(myDeck2);
+                    if(i==n)
+                        printDeck();
                     }
 
                 }
