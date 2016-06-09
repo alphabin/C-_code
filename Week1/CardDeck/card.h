@@ -15,8 +15,8 @@
 
 const int cSize=52;  //Full deck
 const int hcSize=26; //Half of a Deck
-const int nSuit=4;
-const int nRank=13;
+const int nSuit=4; //num of suit
+const int nRank=13; //nul of ranks
 
 class card{
 
@@ -53,8 +53,8 @@ private:
     };
     
     struct sCard{
-        suit valS;
-        rank valR;
+        suit valS;  //instance of enum suit
+        rank valR;  //instance of enum rank
         
     };
         

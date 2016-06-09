@@ -30,10 +30,9 @@ void card::initCard()
         for(int i=0;i<nSuit;i++) //Iterator Represents the suit
             for(int j=0;j<nRank;j++) //Iterator Represents the rank of the card
             {
-                //cout<<"Card "<<num +1 << " ";
-                num[num1].valS = suit(i);
-                num[num1].valR = rank(j); // call out the Deck and Rank to create a class called card
-                //nums[num].getcard();//Prints out the card thrugh helper function, also serves as a test to check array
+               
+                num[num1].valS = suit(i);  // call out the Deck card identifier
+                num[num1].valR = rank(j); // call out the Rank card identifier
                 num1++; //Increment the next on the array
             }
 
@@ -45,18 +44,19 @@ void card::shuffleCard(){  //Takes in an array to do a one shuffle
     
     for(int num1=0;num1<hcSize;num1++) //Start Populating the deck at the stage , Part 1
     {
-        tnums[num1+num1] = num[num1]; // The card intialization based on the odd numbers
+        tnums[num1+num1] = num[num1]; // The card intialization based on the odd numbers,
         
-    }
-    int ins=1;
-    for(int num1=hcSize;num1<cSize;num1++) // Part 2
+    }   //index = positon + postion , 0 = 0 + 0  ,   2 = 1 + 1
+    
+    int ins=1; //Start the initial at 1 position for the second half of the elements to fill
+    for(int num1=hcSize;num1<cSize;num1++) // Part 2 of the deck, starts off where the midway point of the deck is
     {
         
         tnums[ins] = num[num1];  // The card intialization based on the even numbers
-        ins=ins+2;
+        ins=ins+2; //every odd element.
         
     }
-    for(int tnum=0;tnum<cSize;tnum++)
+    for(int tnum=0;tnum<cSize;tnum++) //Iterates the temporary container to the original array of suit and rank
     {
         num[tnum]=tnums[tnum]; // Assigns the temporary array into the permenent nums array to be referenced
     }
@@ -80,13 +80,13 @@ void card::equal(card num1){
         if (n==n1){
             if(r==r1)
             {
-                equal=true;
+                equal=true;  //Card must match
             }
             else{
-                equal=false;
+                equal=false;  //Card does not math
             }
         }
-    }
+    } //end the deck and gives the if statement a result
     if (equal==true){
         cout<<"------------------------"<<endl;
         cout<<"The Card Deck is a Match"<<endl;
@@ -131,9 +131,8 @@ void card::printDeck(){   //Takes in an array to  print out all the elements
     for(int tnum=0;tnum<cSize;tnum++)    //Iterates all the elements in the card to print out one by one
     {
         cout<<"Card "<<tnum +1 << " ";  //For print notation for readability
-        int n = num[tnum].valS;
-        int r = num[tnum].valR;
-        
+        int n = num[tnum].valS;    //gets the value for the print out by looking for the value in Suite
+        int r = num[tnum].valR; //gets the value for the print out by looking for the value in Rank
         
         if (n == 0)
             cout << "HEARTS";
