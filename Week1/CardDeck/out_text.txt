@@ -1,0 +1,212 @@
+xploit:CardDeck CCahangama$ ./a.out 
+|-------------|
+|Deck of Cards|
+|-------------|
+!------!Start of the Deck!------!
+Card 1 HEARTS ACE
+Card 2 HEARTS TWO
+Card 3 HEARTS THREE
+Card 4 HEARTS FOUR
+Card 5 HEARTS FIVE
+Card 6 HEARTS SIX
+Card 7 HEARTS SEVEN
+Card 8 HEARTS EIGHT
+Card 9 HEARTS NINE
+Card 10 HEARTS TEN
+Card 11 HEARTS JACK
+Card 12 HEARTS QUEEN
+Card 13 HEARTS KING
+Card 14 SPADES ACE
+Card 15 SPADES TWO
+Card 16 SPADES THREE
+Card 17 SPADES FOUR
+Card 18 SPADES FIVE
+Card 19 SPADES SIX
+Card 20 SPADES SEVEN
+Card 21 SPADES EIGHT
+Card 22 SPADES NINE
+Card 23 SPADES TEN
+Card 24 SPADES JACK
+Card 25 SPADES QUEEN
+Card 26 SPADES KING
+Card 27 CLUBS ACE
+Card 28 CLUBS TWO
+Card 29 CLUBS THREE
+Card 30 CLUBS FOUR
+Card 31 CLUBS FIVE
+Card 32 CLUBS SIX
+Card 33 CLUBS SEVEN
+Card 34 CLUBS EIGHT
+Card 35 CLUBS NINE
+Card 36 CLUBS TEN
+Card 37 CLUBS JACK
+Card 38 CLUBS QUEEN
+Card 39 CLUBS KING
+Card 40 DIAMONDS ACE
+Card 41 DIAMONDS TWO
+Card 42 DIAMONDS THREE
+Card 43 DIAMONDS FOUR
+Card 44 DIAMONDS FIVE
+Card 45 DIAMONDS SIX
+Card 46 DIAMONDS SEVEN
+Card 47 DIAMONDS EIGHT
+Card 48 DIAMONDS NINE
+Card 49 DIAMONDS TEN
+Card 50 DIAMONDS JACK
+Card 51 DIAMONDS QUEEN
+Card 52 DIAMONDS KING
+!------!End of the Deck!------!
+Do you want keep shuffling ? (1 to continue / 0 to quit / try to Match the Deck '99') 
+1
+!------!Start of the Deck!------!
+Card 1 HEARTS ACE
+Card 2 CLUBS ACE
+Card 3 HEARTS TWO
+Card 4 CLUBS TWO
+Card 5 HEARTS THREE
+Card 6 CLUBS THREE
+Card 7 HEARTS FOUR
+Card 8 CLUBS FOUR
+Card 9 HEARTS FIVE
+Card 10 CLUBS FIVE
+Card 11 HEARTS SIX
+Card 12 CLUBS SIX
+Card 13 HEARTS SEVEN
+Card 14 CLUBS SEVEN
+Card 15 HEARTS EIGHT
+Card 16 CLUBS EIGHT
+Card 17 HEARTS NINE
+Card 18 CLUBS NINE
+Card 19 HEARTS TEN
+Card 20 CLUBS TEN
+Card 21 HEARTS JACK
+Card 22 CLUBS JACK
+Card 23 HEARTS QUEEN
+Card 24 CLUBS QUEEN
+Card 25 HEARTS KING
+Card 26 CLUBS KING
+Card 27 SPADES ACE
+Card 28 DIAMONDS ACE
+Card 29 SPADES TWO
+Card 30 DIAMONDS TWO
+Card 31 SPADES THREE
+Card 32 DIAMONDS THREE
+Card 33 SPADES FOUR
+Card 34 DIAMONDS FOUR
+Card 35 SPADES FIVE
+Card 36 DIAMONDS FIVE
+Card 37 SPADES SIX
+Card 38 DIAMONDS SIX
+Card 39 SPADES SEVEN
+Card 40 DIAMONDS SEVEN
+Card 41 SPADES EIGHT
+Card 42 DIAMONDS EIGHT
+Card 43 SPADES NINE
+Card 44 DIAMONDS NINE
+Card 45 SPADES TEN
+Card 46 DIAMONDS TEN
+Card 47 SPADES JACK
+Card 48 DIAMONDS JACK
+Card 49 SPADES QUEEN
+Card 50 DIAMONDS QUEEN
+Card 51 SPADES KING
+Card 52 DIAMONDS KING
+!------!End of the Deck!------!
+Comparing the Decks
+--------------------------
+The Card Deck is NOT Match
+--------------------------
+Do you want keep shuffling ? (1 to continue / 0 to quit / try to Match the Deck '99') 
+99
+The Iteration : 2
+Comparing the Decks
+--------------------------
+The Card Deck is NOT Match
+--------------------------
+The Iteration : 3
+Comparing the Decks
+--------------------------
+The Card Deck is NOT Match
+--------------------------
+The Iteration : 4
+Comparing the Decks
+--------------------------
+The Card Deck is NOT Match
+--------------------------
+The Iteration : 5
+Comparing the Decks
+--------------------------
+The Card Deck is NOT Match
+--------------------------
+The Iteration : 6
+Comparing the Decks
+--------------------------
+The Card Deck is NOT Match
+--------------------------
+The Iteration : 7
+Comparing the Decks
+--------------------------
+The Card Deck is NOT Match
+--------------------------
+The Iteration : 8
+Comparing the Decks
+------------------------
+The Card Deck is a Match
+------------------------
+!------!Start of the Deck!------!
+Card 1 HEARTS ACE
+Card 2 HEARTS TWO
+Card 3 HEARTS THREE
+Card 4 HEARTS FOUR
+Card 5 HEARTS FIVE
+Card 6 HEARTS SIX
+Card 7 HEARTS SEVEN
+Card 8 HEARTS EIGHT
+Card 9 HEARTS NINE
+Card 10 HEARTS TEN
+Card 11 HEARTS JACK
+Card 12 HEARTS QUEEN
+Card 13 HEARTS KING
+Card 14 SPADES ACE
+Card 15 SPADES TWO
+Card 16 SPADES THREE
+Card 17 SPADES FOUR
+Card 18 SPADES FIVE
+Card 19 SPADES SIX
+Card 20 SPADES SEVEN
+Card 21 SPADES EIGHT
+Card 22 SPADES NINE
+Card 23 SPADES TEN
+Card 24 SPADES JACK
+Card 25 SPADES QUEEN
+Card 26 SPADES KING
+Card 27 CLUBS ACE
+Card 28 CLUBS TWO
+Card 29 CLUBS THREE
+Card 30 CLUBS FOUR
+Card 31 CLUBS FIVE
+Card 32 CLUBS SIX
+Card 33 CLUBS SEVEN
+Card 34 CLUBS EIGHT
+Card 35 CLUBS NINE
+Card 36 CLUBS TEN
+Card 37 CLUBS JACK
+Card 38 CLUBS QUEEN
+Card 39 CLUBS KING
+Card 40 DIAMONDS ACE
+Card 41 DIAMONDS TWO
+Card 42 DIAMONDS THREE
+Card 43 DIAMONDS FOUR
+Card 44 DIAMONDS FIVE
+Card 45 DIAMONDS SIX
+Card 46 DIAMONDS SEVEN
+Card 47 DIAMONDS EIGHT
+Card 48 DIAMONDS NINE
+Card 49 DIAMONDS TEN
+Card 50 DIAMONDS JACK
+Card 51 DIAMONDS QUEEN
+Card 52 DIAMONDS KING
+!------!End of the Deck!------!
+Do you want keep shuffling ? (1 to continue / 0 to quit / try to Match the Deck '99') 
+0
+xploit:CardDeck CCahangama$ 

@@ -119,7 +119,7 @@ void card::shuffleUI(card myDeck2){
                 {
                     do
                     {
-                        cout<<"The Iteration : "<<numC<<endl;
+                        cout<<"The Iteration : "<<numC+1<<endl;
                         shuffleCard();
                         equal(myDeck2);
                         
@@ -132,7 +132,7 @@ void card::shuffleUI(card myDeck2){
                if( (n!=1) && (n!=99) )
                  for (int i=1;i<=n;i++)
                    {
-                    cout<<"The Iteration : "<<i+1<<endl;
+                    //cout<<"The Iteration : "<<i+1+1<<endl;
                     shuffleCard();
                     equal(myDeck2);
                     if(i==n)
