@@ -20,12 +20,13 @@ card::card(){
     initCard();
 }
 
+int card::numC; //Static variable to track the iterations of the deck
 
 
 void card::initCard()
     {  //Takes in an array card type, and populates it with all the
         int num1=0;//Declaring the intial Deck
-        
+        numC=0;
         
         for(int i=0;i<nSuit;i++) //Iterator Represents the suit
             for(int j=0;j<nRank;j++) //Iterator Represents the rank of the card
@@ -41,7 +42,7 @@ void card::initCard()
 
 void card::shuffleCard(){  //Takes in an array to do a one shuffle
      sCard tnums[cSize]; //Declaring the temp Deck of size 52, this is done as a security measure
-    
+    numC=numC+1;
     for(int num1=0;num1<hcSize;num1++) //Start Populating the deck at the stage , Part 1
     {
         tnums[num1+num1] = num[num1]; // The card intialization based on the odd numbers,
@@ -104,21 +105,37 @@ void card::shuffleUI(card myDeck2){
     
     int n;
     do{
-        cout<<"Do you want keep shuffling ? (1 to continue / 0 to quit / 8 to Match the Deck) " << endl;
+        cout<<"Do you want keep shuffling ? (1 to continue / 0 to quit / try to Match the Deck '99') " << endl;
         cin>>n;
         if (n!=0){
             shuffleCard(); //User calls the shuffle the first time
             printDeck(); //Prints the first shuffle
             equal(myDeck2); //User calls to check if the first shuffl matched
-            if (n > 1)
+            
+            
+                if ( n == 99)
+                {
+                    
+                    do
+                    {
+                        cout<<"The Iteration : "<<numC<<endl;
+                        shuffleCard();
+                        printDeck();
+                        equal(myDeck2);
+                    }while((numC%8)!=0);
+                    
+                }
+               else
                 for (int i=0;i<n-1;i++)
                 {
                     cout<<"The Iteration : "<<i+1+1<<endl;
                     shuffleCard();
                     printDeck();
                     equal(myDeck2);
+                    }
+
                 }
-        }
+        
         
     }while(n>0);
 

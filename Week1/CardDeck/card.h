@@ -60,7 +60,7 @@ private:
         
    
     sCard num[cSize]; //Declare the array of structure of sCard(single card)
-    
+    static int numC;
 
    
 };
