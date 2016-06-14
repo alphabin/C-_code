@@ -21,6 +21,8 @@ class Employee{
 public:
 	Employee();
 	Employee(string,int,long int, int,string,string,long int,int,int,int);
+	friend ostream& operator<<(ostream&, const Employee);
+	friend istream& operator>>(istream&, Employee &);
 
 	virtual ~Employee();
 
@@ -32,19 +34,29 @@ public:
 	void addTitle(string);
 	void addSalary(long int);
 	void addDate(int,int,int);
-
+    void addIntAge(int);
 	void getDate();
 	void getSalary();
 	void getTitle();
 	void getGender();
-	void getAge();
-	void getPhone();
+	int getAge();
+	//void getPhone();
+	long int getPhone();
 	void getId();
 	void getName();
 
-	void print();
 
-protected:
+
+    bool operator==(Employee);
+    Employee operator+(int);
+
+
+    void print();
+
+
+
+
+private:
     string name;
     int empID;
     long int phoneNum;
@@ -52,6 +64,9 @@ protected:
     string jTitle;
     string gender;
     long int salary;
+    int month;
+    int day;
+    int year;
     Date hiredate;
 
 

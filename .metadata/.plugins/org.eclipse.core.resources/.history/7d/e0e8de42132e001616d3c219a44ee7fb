@@ -1,0 +1,29 @@
+/*
+ * Employee.cpp
+ *
+ *  Created on: Jun 8, 2016
+ *      Author: CCahangama
+ */
+
+#include "Employee.h"
+#include "Date.h"
+#include <iostream>
+
+
+
+Employee::Employee() {
+	// TODO Auto-generated constructor stub;
+
+
+}
+
+Employee::Employee(string name,int age,string gender,string JTitle,float,Date) {
+	// TODO Auto-generated constructor stub
+
+
+}
+
+Employee::~Employee() {
+	// TODO Auto-generated destructor stub
+}
+

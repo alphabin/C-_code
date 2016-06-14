@@ -1,0 +1,60 @@
+/*
+ * Programmer.cpp
+ *
+ *  Created on: Jun 8, 2016
+ *      Author: CCahangama
+ */
+
+#include "Programmer.h"
+#include "Employee.h"
+#include <iostream>
+
+using namespace std;
+
+Programmer::Programmer() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Programmer::Programmer(string nname,int nempID,long int nphoneNum,int nage,string ngender,string njTitle,long int nsalary,
+		              int day,int month,int year,long int ndeptNum,string nsuperName,int npercentL, string ncPProgram,string jPProgram ){
+
+		addName(nname);
+		addId(nempID);
+		addPhone(nphoneNum);
+		addAge(nage);
+		addGender(ngender);
+		addTitle(njTitle);
+		addSalary(nsalary);
+		addDate(day,month,year);
+		addDept(ndeptNum);
+		addSupervisor(nsuperName);
+		addPercent(npercentL);
+		cProgram(ncPProgram);
+		jProgram(jPProgram);
+
+}
+
+
+void Programmer::addDept(long int ndeptNum){deptNum=ndeptNum;}
+void Programmer::addSupervisor(string nsuperName){superName=nsuperName;}
+void Programmer::addPercent(int npercentL){percentL=npercentL;}
+void Programmer::cProgram(string ncProgram){cPProgram=ncProgram;}
+void Programmer::jProgram(string njProgram){jPProgram=njProgram;}
+
+void print(){
+	cout << "NAME          "<<"EmployeeID    " <<"Phone   " <<"Age " <<"Gender "<<"	JobTitle "<<" Salary "<<"  HireDate"<<endl;
+	cout << name <<"	 "<< empID<<"	 "<<phoneNum<<"  "<< age<<"   " <<gender<<" 	"<<jTitle<<" "<<salary<<" " ;
+	    hiredate.printDate();
+	    cout<<endl;
+
+}
+
+
+
+
+
+Programmer::~Programmer() {
+	// TODO Auto-generated destructor stub
+}
+

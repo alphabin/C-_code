@@ -22,7 +22,7 @@ SoftArchitect::SoftArchitect() {
 	addSalary(100000);
 	addDate(2,2,2);
 	addDept(13213);
-	addSupervisor("R and D");
+	addSupervisor("Lind Tester");
 	addPercent(23);
 	addyears(99);
 
@@ -67,7 +67,7 @@ void SoftArchitect::print(){
 	getSupervisor();
 	cout<<"\t ";
 	getPercent();
-	cout<<"\t ";
+	cout<<"\t\t";
 	getyears();
 
 

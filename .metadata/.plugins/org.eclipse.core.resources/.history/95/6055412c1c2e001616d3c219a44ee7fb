@@ -1,0 +1,17 @@
+/*
+ * SoftArchitect.h
+ *
+ *  Created on: Jun 8, 2016
+ *      Author: CCahangama
+ */
+
+#ifndef SOFTARCHITECT_H_
+#define SOFTARCHITECT_H_
+
+class SoftArchitect::public Employee{
+public:
+	SoftArchitect();
+	virtual ~SoftArchitect();
+};
+
+#endif /* SOFTARCHITECT_H_ */

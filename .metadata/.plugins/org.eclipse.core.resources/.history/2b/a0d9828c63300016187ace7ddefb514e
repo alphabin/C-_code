@@ -1,0 +1,123 @@
+/*
+ * Main.cpp
+ *
+ *  Created on: Jun 8, 2016
+ *      Author: Chatura ahangama
+ */
+
+
+#include "Employee.h"
+#include "Programmer.h"
+#include "SoftArchitect.h"
+#include <string>
+
+
+#include <iostream>
+
+
+
+using namespace std;
+
+int main()
+{
+  Employee normal;
+  normal.print();
+  Employee first("Chatura Blah",12345,8181721515,40,"M","Comedian",1000000,8,14,1923); //Another Way to initialize
+  first.print();
+
+
+  Programmer normal1;
+  normal1.print();
+  Programmer second("Chatura Jones",12345,8181721515,40,"M","Programmer",1000000,3,14,1992,22134,"Mrs Jones",4,"NO","YES");
+  second.print();
+
+
+  SoftArchitect normal2;
+  normal2.print();
+  SoftArchitect third("Chatura A",12345,8181721515,40,"M","Architect",1000000,1,14,1912,22134,"Mr Jones",4,13);
+  third.print();
+
+
+  //checkNum(first,second);
+  if (first == normal)
+	  cout<<endl<<"True by Overloading";
+  else
+	  cout<<endl<<"False by Overloading";
+
+
+  normal.print();
+  normal.addIntAge(33);
+  normal=normal+15;
+  normal.print();
+
+  cout<<first;
+
+
+
+};
+
+void checkNum(Employee left, Programmer right ){
+
+	   cout<<"\n ++++++ Phone ++++ ++++++ "<<endl;
+	   if  (left.getPhone() == right.getPhone()){
+		   cout<<endl;
+		   cout <<"Equal Numbers"<<endl;
+		   left.getName();
+		   cout<<endl;
+	   	   right.getName();
+	   	   cout<<endl;
+		   cout <<"Equal Numbers"<<endl;}
+	   else
+			cout<<"Not Equal"<<endl;
+
+	   cout<<"\n ++++++ +++++ ++++ Number "<<endl;
+}
+
+
+ostream& operator<<(ostream& out, Employee temp){
+	out<< endl<<"-------------------------------------------------------------------------------------------------------------------\t" <<endl;
+		out << "NAME\t\t"<<left<<"EmployeeID\t"<<left<<"Phone\t\t"<<left <<"Age\t"<<left<<"Gender\t"<<left<<"JobTitle\t"<<left<<"Salary\t "<<left<<"HireDate\t"<<endl;
+
+		temp.getName();
+	    out<<"\t";
+	    temp.getId();
+	    out<<"\t\t";
+	    out<<temp.getPhone();
+	    out<<"\t";
+	    out<<temp.getAge();
+	    out<<"\t";
+	    temp.getGender();
+	    out<<"\t";
+	    temp.getTitle();
+	    out<<"\t";
+	    temp.getSalary();
+	    out<<"\t";
+	    temp.getDate();
+
+	    out<<endl;
+
+	    return out;
+
+}
+
+
+istream& operator>>(istream& in, Employee temp){
+
+	string nname;
+	int nempID;
+	long int nphoneNum;
+	int nage;
+	string ngender;
+	string njTitle;
+	long int nsalary;
+	int a;
+	int b;
+	int c;
+
+	cout<<"\nEnter the name"<<endl;
+    in>>nname;
+    cout<<"\nEnter the ID"<<endl;
+
+
+
+}

@@ -1,0 +1,26 @@
+/*
+ * Employee.h
+ *
+ *  Created on: Jun 8, 2016
+ *      Author: CCahangama
+ */
+
+
+//This shall serve as the base class
+
+#ifndef EMPLOYEE_H_
+#define EMPLOYEE_H_
+
+using namespace std;
+
+class Employee{
+public:
+	Employee();
+	virtual ~Employee();
+
+private:
+    Date day;
+
+};
+
+#endif /* EMPLOYEE_H_ */

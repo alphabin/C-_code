@@ -1,0 +1,21 @@
+/*
+ * Date.h
+ *
+ *  Created on: Jun 8, 2016
+ *      Author: CCahangama
+ */
+
+#ifndef DATE_H_
+#define DATE_H_
+
+namespace std {
+
+class Date {
+public:
+	Date();
+	virtual ~Date();
+};
+
+} /* namespace std */
+
+#endif /* DATE_H_ */

@@ -1,0 +1,46 @@
+/*
+ * Employee.cpp
+ *
+ *  Created on: Jun 8, 2016
+ *      Author: CCahangama
+ */
+
+#include "Employee.h"
+#include "Date.h"
+#include <iostream>
+
+using namespace std;
+
+Employee::Employee() {
+	// TODO Auto-generated constructor stub;
+
+
+}
+
+Employee::Employee(string nname,int nempID,long int nphoneNum,int nage,string ngender,string njTitle,float nsalary,Date nhireday) {
+	// TODO Auto-generated constructor stub
+	 name=nname;
+	 empID=nempID;
+	 phoneNum=nphoneNum;
+	 age=nage;
+	 gender=ngender;
+	 jTitle=njTitle;
+	 salary=nsalary;
+	 hiredate=nhireday;
+
+}
+
+
+void Employee::print(){
+	cout << "NAME          "<<"Employee ID    " <<"Phone " <<"Age " <<"Gender "<<"Job Title "<<"Salary "<<"Hire Date"<<endl;
+    cout << name <<" "<< empID<<" "<<phoneNum<<" "<< age<<" " <<gender<<" "<<jTitle<<" "<<salary ;
+    hiredate.printDate();
+    cout<<endl;
+
+
+}
+
+Employee::~Employee() {
+	// TODO Auto-generated destructor stub
+}
+

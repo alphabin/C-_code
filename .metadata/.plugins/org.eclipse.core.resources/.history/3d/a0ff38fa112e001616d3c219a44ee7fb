@@ -1,0 +1,22 @@
+#include "Employee.h"
+#include <string>
+
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+
+  Employee first;
+
+  Date s(1,2,1234);
+  Employee first(s);
+  s.printDate();
+
+
+
+
+};
+

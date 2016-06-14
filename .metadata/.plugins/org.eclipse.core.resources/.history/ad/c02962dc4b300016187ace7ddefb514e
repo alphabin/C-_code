@@ -1,0 +1,109 @@
+/*
+ * Programmer.cpp
+ *
+ *  Created on: Jun 8, 2016
+ *      Author: CCahangama
+ */
+#include "Employee.h"
+#include "Programmer.h"
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+Programmer::Programmer(){
+	// Auto-generated constructor stub
+	addName("Prog Test");
+	addId(12345);
+	addPhone(12345678);
+	addAge(99);
+	addGender("M");
+	addTitle("Tester");
+	addSalary(100000);
+	addDate(2,2,2);
+	addDept(13213);
+	addSupervisor("Osmoses Testing");
+	addPercent(23);
+	cProgram("YES");
+	jProgram("NO");
+
+}
+
+Programmer::Programmer(string nname,int nempID,long int nphoneNum,int nage,string ngender,string njTitle,long int nsalary,
+		              int day,int month,int year,long int ndeptNum,string nsuperName,int npercentL, string ncPProgram,string jPProgram ){
+
+		addName(nname);
+		addId(nempID);
+		addPhone(nphoneNum);
+		addAge(nage);
+		addGender(ngender);
+		addTitle(njTitle);
+		addSalary(nsalary);
+		addDate(day,month,year);
+		addDept(ndeptNum);
+		addSupervisor(nsuperName);
+		addPercent(npercentL);
+		cProgram(ncPProgram);
+		jProgram(jPProgram);
+
+
+}
+
+
+void Programmer::addDept(long int ndeptNum){deptNum=ndeptNum;}
+void Programmer::addSupervisor(string nsuperName){superName=nsuperName;}
+void Programmer::addPercent(int npercentL){percentL=npercentL;}
+void Programmer::cProgram(string ncProgram){cPProgram=ncProgram;}
+void Programmer::jProgram(string njProgram){jPProgram=njProgram;}
+
+
+void Programmer::getDept(){cout<<deptNum;}
+void Programmer::getSupervisor(){cout<<superName;}
+void Programmer::getPercent(){cout<<left<<percentL;}
+void Programmer::getcProgram(){cout<<cPProgram;}
+void Programmer::getjProgram(){cout<<jPProgram;}
+
+void Programmer::print(){
+
+	Employee::print();
+
+
+    cout<<endl;
+	cout<<"\t\t"<<left<<"Department"<<left<<"\tSupervisor"<<left <<"\tRaise"<<left<< "\tC++" <<left<<"\tJava " <<endl;
+	getName();
+
+	cout<<"\t";
+	getDept();
+	cout<<"\t\t";
+	getSupervisor();
+	cout<<"\t ";
+    getPercent();
+    cout<<"\t ";
+	getcProgram();
+	cout<<"\t ";
+	getjProgram();
+	cout<<endl;
+
+
+	cout<<endl;
+}
+
+
+
+Programmer::~Programmer() {
+	// TODO Auto-generated destructor stub
+}
+
+
+void checkNum(Employee left, Programmer right ){
+
+		left.getPhone() ;
+		right.getPhone();
+
+		cout << "Equal Numbers"<<endl;
+
+	}
+
+
+}
+

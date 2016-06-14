@@ -1,0 +1,26 @@
+/*
+ * Employee.cpp
+ *
+ *  Created on: Jun 8, 2016
+ *      Author: CCahangama
+ */
+
+#include "Employee.h"
+#include "Date.h"
+#include <iostream>
+
+using namespace std;
+
+Employee::Employee() {
+	// TODO Auto-generated constructor stub
+	day(1,15,2016);
+	day.printDate();
+
+
+}
+
+
+Employee::~Employee() {
+	// TODO Auto-generated destructor stub
+}
+

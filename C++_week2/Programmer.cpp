@@ -4,15 +4,15 @@
  *  Created on: Jun 8, 2016
  *      Author: CCahangama
  */
-
-#include "Programmer.h"
 #include "Employee.h"
+#include "Programmer.h"
 #include <iostream>
+#include <iomanip>
 
 using namespace std;
 
 Programmer::Programmer(){
-	// TODO Auto-generated constructor stub
+	// Auto-generated constructor stub
 	addName("Prog Test");
 	addId(12345);
 	addPhone(12345678);
@@ -22,7 +22,7 @@ Programmer::Programmer(){
 	addSalary(100000);
 	addDate(2,2,2);
 	addDept(13213);
-	addSupervisor("Testing");
+	addSupervisor("Osmoses Testing");
 	addPercent(23);
 	cProgram("YES");
 	jProgram("NO");
@@ -59,7 +59,7 @@ void Programmer::jProgram(string njProgram){jPProgram=njProgram;}
 
 void Programmer::getDept(){cout<<deptNum;}
 void Programmer::getSupervisor(){cout<<superName;}
-void Programmer::getPercent(){cout<<percentL;}
+void Programmer::getPercent(){cout<<left<<percentL;}
 void Programmer::getcProgram(){cout<<cPProgram;}
 void Programmer::getjProgram(){cout<<jPProgram;}
 
@@ -69,8 +69,9 @@ void Programmer::print(){
 
 
     cout<<endl;
-	cout<<"\t\t"<<"Department \t Supervisor \t Raise \t C++ \t Java " <<endl;
+	cout<<"\t\t"<<left<<"Department"<<left<<"\tSupervisor"<<left <<"\tRaise"<<left<< "\tC++" <<left<<"\tJava " <<endl;
 	getName();
+
 	cout<<"\t";
 	getDept();
 	cout<<"\t\t";
@@ -92,4 +93,6 @@ void Programmer::print(){
 Programmer::~Programmer() {
 	// TODO Auto-generated destructor stub
 }
+
+
 

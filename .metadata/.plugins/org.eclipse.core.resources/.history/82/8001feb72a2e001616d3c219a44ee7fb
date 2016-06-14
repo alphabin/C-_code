@@ -1,0 +1,42 @@
+#include "Employee.h"
+#include "Programmer.h"
+#include <string>
+
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+  //Employee first("Chatura A",12345,8181721515,40,"M","Comedian",1000000,s); //Another Way to initialize
+  Employee first;
+  first.print();
+
+
+
+  first.addName("Chatura H");
+  first.addId(12345);
+  first.addPhone(8181721515);
+  first.addAge(24);
+  first.addGender("M");
+  first.addTitle("Programmer");
+  first.addSalary(100000);
+  first.addDate(1,1,2010);
+  first.print();
+
+  Programmer second;
+  second.addName("Chatura H");
+  second.addId(12345);
+  second.addPhone(8181721515);
+  second.addAge(24);
+  second.addGender("M");
+  second.addTitle("Programmer");
+  second.addSalary(100000);
+  second.addDate(1,1,2010);
+  second.print(second);
+
+
+
+};
+

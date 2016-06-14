@@ -1,0 +1,136 @@
+/*
+ * Employee.cpp
+ *
+ *  Created on: Jun 8, 2016
+ *      Author: CCahangama
+ */
+
+#include "Employee.h"
+#include "Date.h"
+#include <iostream>
+
+using namespace std;
+
+Employee::Employee() {
+	// TODO Auto-generated constructor stub;
+	name="Test Test";
+	empID=100001;
+	phoneNum=111111111;
+	age=1;
+	gender="F";
+	jTitle="Testing";
+	salary=10000001;
+	Date n;
+	hiredate=n;
+
+}
+
+Employee::Employee(string nname,int nempID,long int nphoneNum,int nage,string ngender,string njTitle,long int nsalary,Date nhireday) {
+	// TODO Auto-generated constructor stub
+	 name=nname;
+	 empID=nempID;
+	 phoneNum=nphoneNum;
+	 age=nage;
+	 gender=ngender;
+	 jTitle=njTitle;
+	 salary=nsalary;
+	 hiredate=nhireday;
+
+}
+
+void Employee::addName(string nname){
+	  name=nname;
+
+}
+
+void Employee::getName(){
+	  cout<<name;
+
+}
+
+
+void Employee::addId(int nempID){
+	empID=nempID;
+
+}
+
+void Employee::getId(){
+	cout<<empID;
+
+}
+
+void Employee::addPhone(long int  nphoneNum){
+	 phoneNum=nphoneNum;
+
+
+
+}
+
+void Employee::getPhone(){
+	 cout<<phoneNum;
+
+}
+
+void Employee::addAge(int nage){
+	 age=nage;
+
+}
+
+void Employee::getAge(){
+	 cout<<age;
+
+}
+
+void Employee::addGender(string ngender){
+	gender=ngender;
+}
+
+void Employee::getGender(){
+	cout<<gender;
+
+}
+
+void Employee::addTitle(string njTitle){
+	 jTitle=njTitle;
+
+	}
+
+void Employee::getTitle(){
+	 cout<<jTitle;
+
+	}
+
+void Employee::addSalary(long int nsalary){
+	 salary=nsalary;
+	}
+
+void Employee::getSalary(){
+	 cout<<salary;
+	}
+
+
+void Employee::addDate(int a,int b,int c){
+	Date temp(a,b,c);
+	hiredate=temp;
+
+	}
+
+void Employee::getDate(){
+
+	hiredate.printDate();
+
+	}
+
+
+
+void Employee::print(){
+	cout << "NAME          "<<"EmployeeID    " <<"Phone   " <<"Age " <<"Gender "<<"	JobTitle "<<" Salary "<<"  HireDate"<<endl;
+
+    hiredate.printDate();
+    cout<<endl;
+}
+
+Employee::~Employee() {
+	// TODO Auto-generated destructor stub
+}
+

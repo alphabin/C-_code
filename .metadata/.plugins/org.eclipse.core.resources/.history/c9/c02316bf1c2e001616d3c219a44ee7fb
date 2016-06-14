@@ -1,0 +1,23 @@
+/*
+ * Programmer.h
+ *
+ *  Created on: Jun 8, 2016
+ *      Author: CCahangama
+ */
+
+#ifndef PROGRAMMER_H_
+#define PROGRAMMER_H_
+
+#include "Employee.h"
+#include <iostream>
+
+using namespace std;
+
+
+class Programmer{
+public:
+	Programmer();
+	virtual ~Programmer();
+};
+
+#endif /* PROGRAMMER_H_ */

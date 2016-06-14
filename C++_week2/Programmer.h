@@ -9,12 +9,15 @@
 #define PROGRAMMER_H_
 
 #include "Employee.h"
+
+#include <iostream>
 #include <iostream>
 
 using namespace std;
 
 
-class Programmer:public Employee{
+class Programmer:public Employee
+{
 public:
 	Programmer();
 	Programmer(string,int,long int, int,string,string,long int,int,int,int, long int,string,int, string ,string );
@@ -35,8 +38,9 @@ public:
 	virtual ~Programmer();
 
 
+   friend void checkNum(Employee, Programmer );
 
-protected:
+private:
 
 	long int deptNum;
 	string superName;
@@ -45,5 +49,4 @@ protected:
 	string jPProgram;
 
 };
-
 #endif /* PROGRAMMER_H_ */

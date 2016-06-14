@@ -1,0 +1,22 @@
+/*
+ * SoftArchitect.cpp
+ *
+ *  Created on: Jun 8, 2016
+ *      Author: CCahangama
+ */
+
+#include "SoftArchitect.h"
+#include "Programmer.h"
+#include <iostream>
+
+using namespace std;
+
+SoftArchitect::SoftArchitect() {
+	// TODO Auto-generated constructor stub
+
+}
+
+SoftArchitect::~SoftArchitect() {
+	// TODO Auto-generated destructor stub
+}
+

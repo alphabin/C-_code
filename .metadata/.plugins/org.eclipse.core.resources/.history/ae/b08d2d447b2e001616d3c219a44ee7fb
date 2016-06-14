@@ -1,0 +1,80 @@
+/*
+ * Programmer.cpp
+ *
+ *  Created on: Jun 8, 2016
+ *      Author: CCahangama
+ */
+
+#include "Programmer.h"
+#include "Employee.h"
+#include <iostream>
+
+using namespace std;
+
+Programmer::Programmer(){
+	// TODO Auto-generated constructor stub
+
+}
+
+Programmer::Programmer(string nname,int nempID,long int nphoneNum,int nage,string ngender,string njTitle,long int nsalary,
+		              int day,int month,int year,long int ndeptNum,string nsuperName,int npercentL, string ncPProgram,string jPProgram ){
+
+		one.addName(nname);
+		one.addId(nempID);
+		one.addPhone(nphoneNum);
+		one.addAge(nage);
+		one.addGender(ngender);
+		one.addTitle(njTitle);
+		one.addSalary(nsalary);
+		one.addDate(day,month,year);
+		addDept(ndeptNum);
+		addSupervisor(nsuperName);
+		addPercent(npercentL);
+		cProgram(ncPProgram);
+		jProgram(jPProgram);
+
+
+}
+
+
+void Programmer::addDept(long int ndeptNum){deptNum=ndeptNum;}
+void Programmer::addSupervisor(string nsuperName){superName=nsuperName;}
+void Programmer::addPercent(int npercentL){percentL=npercentL;}
+void Programmer::cProgram(string ncProgram){cPProgram=ncProgram;}
+void Programmer::jProgram(string njProgram){jPProgram=njProgram;}
+
+
+void Programmer::getDept(){cout<<deptNum;}
+void Programmer::getSupervisor(){cout<<superName;}
+void Programmer::getPercent(){cout<<percentL;}
+void Programmer::getcProgram(){cout<<cPProgram;}
+void Programmer::getjProgram(){cout<<jPProgram;}
+
+void Programmer::print(){
+
+	one.print();
+	cout << "NAME          "<<"Department    " <<"Supervisor Name   " <<"Raise " <<"C++ Knowledge "<<"Java Knowledge "<<endl;
+	getName();
+	cout<<"	";
+	getDept();
+	cout<<"	";
+	getSupervisor();
+	cout<<"	";
+	getPercent();
+	cout<<"	";
+	getcProgram();
+	cout<<"	";
+	getjProgram();
+
+
+
+
+	cout<<endl;
+}
+
+
+
+Programmer::~Programmer() {
+	// TODO Auto-generated destructor stub
+}
+

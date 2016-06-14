@@ -1,0 +1,22 @@
+/*
+ * Programmer.cpp
+ *
+ *  Created on: Jun 8, 2016
+ *      Author: CCahangama
+ */
+
+#include "Programmer.h"
+#include "Employee.h"
+#include <iostream>
+
+using namespace std;
+
+Programmer::Programmer() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Programmer::~Programmer() {
+	// TODO Auto-generated destructor stub
+}
+

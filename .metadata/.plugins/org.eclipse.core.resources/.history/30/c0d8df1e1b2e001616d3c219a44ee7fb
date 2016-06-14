@@ -1,0 +1,25 @@
+#include "Employee.h"
+#include <string>
+
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+
+  Employee firsts;
+
+  Date s(1,2,1234);
+  Employee first("Chatura A",12345,8184724595,40,"M","Comedian",1000000,s);
+  first.print();
+
+  Employee test;
+  test.print();
+
+
+
+
+};
+

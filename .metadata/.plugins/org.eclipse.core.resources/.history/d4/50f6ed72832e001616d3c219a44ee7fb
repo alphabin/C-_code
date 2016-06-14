@@ -1,0 +1,25 @@
+/*
+ * SoftArchitect.h
+ *
+ *  Created on: Jun 8, 2016
+ *      Author: CCahangama
+ */
+
+#ifndef SOFTARCHITECT_H_
+#define SOFTARCHITECT_H_
+#include "Programmer.h"
+#include <iostream>
+
+using namespace std;
+
+class SoftArchitect:public Programmer{
+
+public:
+	SoftArchitect();
+	virtual ~SoftArchitect();
+	void print();
+private:
+	int years;
+};
+
+#endif /* SOFTARCHITECT_H_ */
