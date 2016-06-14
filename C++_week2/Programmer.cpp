@@ -12,18 +12,18 @@
 using namespace std;
 
 Programmer::Programmer(){
-	// Auto-generated constructor stub
-	addName("Prog Test");
-	addId(12345);
-	addPhone(12345678);
-	addAge(99);
+	// Loading with defaults
+	addName("Sam Software");
+	addId(54321);
+	addPhone(8191234567);
+	addAge(21);
 	addGender("M");
-	addTitle("Tester");
-	addSalary(100000);
-	addDate(2,2,2);
-	addDept(13213);
-	addSupervisor("Osmoses Testing");
-	addPercent(23);
+	addTitle("Programer");
+	addSalary(223000);
+	addDate(12,24,2014);
+	addDept(5432122);
+	addSupervisor("Joe Boss");
+	addPercent(4);
 	cProgram("YES");
 	jProgram("NO");
 
@@ -31,7 +31,7 @@ Programmer::Programmer(){
 
 Programmer::Programmer(string nname,int nempID,long int nphoneNum,int nage,string ngender,string njTitle,long int nsalary,
 		              int day,int month,int year,long int ndeptNum,string nsuperName,int npercentL, string ncPProgram,string jPProgram ){
-
+		//Loading the user constructed values
 		addName(nname);
 		addId(nempID);
 		addPhone(nphoneNum);
@@ -50,24 +50,22 @@ Programmer::Programmer(string nname,int nempID,long int nphoneNum,int nage,strin
 }
 
 
-void Programmer::addDept(long int ndeptNum){deptNum=ndeptNum;}
-void Programmer::addSupervisor(string nsuperName){superName=nsuperName;}
-void Programmer::addPercent(int npercentL){percentL=npercentL;}
-void Programmer::cProgram(string ncProgram){cPProgram=ncProgram;}
-void Programmer::jProgram(string njProgram){jPProgram=njProgram;}
+void Programmer::addDept(long int ndeptNum){deptNum=ndeptNum;}   //Simple assigning of deptNumn
+void Programmer::addSupervisor(string nsuperName){superName=nsuperName;} //Simple assigning of nsuperName
+void Programmer::addPercent(int npercentL){percentL=npercentL;} //Simple assignment of addPercent
+void Programmer::cProgram(string ncProgram){cPProgram=ncProgram;} // simple assignment of programmer C++
+void Programmer::jProgram(string njProgram){jPProgram=njProgram;}  // simple assignment of programmer Java
 
 
-void Programmer::getDept(){cout<<deptNum;}
-void Programmer::getSupervisor(){cout<<superName;}
-void Programmer::getPercent(){cout<<left<<percentL;}
-void Programmer::getcProgram(){cout<<cPProgram;}
-void Programmer::getjProgram(){cout<<jPProgram;}
+void Programmer::getDept() const{cout<<deptNum;}  //Accessor function to print Dept
+void Programmer::getSupervisor() const{cout<<superName;} //Accessor function to print Supervisor
+void Programmer::getPercent() const{cout<<left<<percentL;} //Accessor function to print Percent
+void Programmer::getcProgram() const{cout<<cPProgram;} //Accessor function to print C++
+void Programmer::getjProgram() const {cout<<jPProgram;} //Accessor function to print Java
 
-void Programmer::print(){
+void Programmer::print() const{ /*Print function*/
 
 	Employee::print();
-
-
     cout<<endl;
 	cout<<"\t\t"<<left<<"Department"<<left<<"\tSupervisor"<<left <<"\tRaise"<<left<< "\tC++" <<left<<"\tJava " <<endl;
 	getName();
@@ -91,7 +89,7 @@ void Programmer::print(){
 
 
 Programmer::~Programmer() {
-	// TODO Auto-generated destructor stub
+
 }
 
 

@@ -1,4 +1,4 @@
-18:00:17 **** Incremental Build of configuration Debug for project C++_week2 ****
+15:00:17 **** Incremental Build of configuration Debug for project C++_week2 ****
 make all 
 Building file: ../main.cpp
 Invoking: GCC C++ Compiler
@@ -10,6 +10,3 @@ Invoking: MacOS X C++ Linker
 g++  -o "C++_week2"  ./Date.o ./Employee.o ./Programmer.o ./SoftArchitect.o ./main.o   
 Finished building target: C++_week2
  
-18:00:22 **** Incremental Build of configuration Debug for project C++_week2 ****
-make all 
-make: Nothing to be done for `all'.

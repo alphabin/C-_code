@@ -1,0 +1,139 @@
+/*
+ * Main.cpp
+ *
+ *  Created on: Jun 8, 2016
+ *      Author: Chatura ahangama
+ */
+
+
+#include "Employee.h"
+#include "Programmer.h"
+#include "SoftArchitect.h"
+#include <string>
+
+
+#include <iostream>
+
+
+
+using namespace std;
+
+void dataTest(Employee &,Programmer &,SoftArchitect&);
+
+int main()
+{
+
+  //Populating the data for the Employees
+
+  Employee Jimmy;  //Employee with the deafult constructor
+  Jimmy.print();   //Printing the results of 'normal' deafult constructor
+  Employee Stephan("Stephan Colbert",12346,3105555555,51,"M","Comedian",70000,5,8,2015); //Employee Non-default construct
+  Stephan.print();
+  Employee James("James Corden",87654,7037031234,37,"M","TalkShowHost",900000,12,25,3014); //Employee Non-default construct
+  James.print();
+  Employee Katie("Katie Couric",77777,2035556789,58,"F","News Reporter",500500,03,01,2005); //Employee Non-default construct
+  Katie.print();
+
+
+  //Populating the data for the Programmers
+
+  Programmer Sam; // Programmer default construct
+  Sam.print(); // Print Programmer default construct
+  Programmer Mary("Mary Coder",65432,3105555555,28,"F","Programmer",770123,2,8,2010,6543222,"Mary Leader",7,"YES","YES"); // Programmer Non-default construct
+  Mary.print(); // Print Programmer non-deafult
+
+
+  //Populating the data for the Software Architects Class
+
+  SoftArchitect Alex;// Software Architects Class default construct
+  Alex.print(); //Print default construct
+  SoftArchitect Sally("Sally Designer",6543422,3105558888,38,"F","Architect",870123,2,8,2003,6543422,"Big Boss",8,11);  //Architect Non-default construct
+  Sally.print(); //Print Non-default construct
+
+
+  dataTest(Jimmy,Sam,Alex); //Running test to change all data memebrs and variables
+
+  Jimmy.print();   //Printing the set for Employees
+  Stephan.print();
+  James.print();
+  Katie.print();
+
+  Sam.print();    //Printing the set for Programmer
+  Mary.print();
+
+  Alex.print();   //Printing the set for Soft Architect
+  Sally.print();
+
+  /*
+  //checkNum(first,second);
+  if (first == normal)
+	  cout<<endl<<"True by Overload Checking";
+  else
+	  cout<<endl<<"False by Overloading";
+
+
+  normal.print();
+  normal.addIntAge(33);
+  normal=normal+15;
+  normal.print();
+
+  cout<<first;
+
+  Employee tests;
+
+  cin>>tests;
+
+  tests.print();
+  */
+
+};
+
+void dataTest(Employee & eVar,Programmer & pVar ,SoftArchitect & sVar){
+
+
+	cout<<"\n\n\t\t|Test Mode Enabled|"<<endl;
+	cout<<"\nChanging the Default Constructor For Employee"<<endl ;
+
+	eVar.addName("Sali Patty");
+	eVar.addId(10001);
+	eVar.addPhone(8111112127);
+	eVar.addAge(23);
+	eVar.addGender("F");
+	eVar.addTitle("Hacked");
+	eVar.addSalary(1111000);
+	eVar.addDate(1,1,2001);
+
+	cout<<"Changing the Default Constructor For Programmer"<<endl ;
+
+	pVar.addName("Mani Patty");
+	pVar.addId(20002);
+	pVar.addPhone(1111112121);
+	pVar.addAge(24);
+	pVar.addGender("M");
+	pVar.addTitle("Hacked");
+	pVar.addSalary(1221000);
+	pVar.addDate(1,1,2001);
+	pVar.addDept(5231122);
+	pVar.addSupervisor("Goe Boss");
+	pVar.addPercent(100);
+	pVar.cProgram("YES");
+	pVar.jProgram("YES");
+
+	cout<<"Changing the Default Constructor for Architect"<<endl ;
+
+	sVar.addName("Cheesy Patty");
+	sVar.addId(82312);
+	sVar.addPhone(1291234444);
+	sVar.addAge(12);
+	sVar.addGender("M");
+	sVar.addTitle("Hack-tect");
+	sVar.addSalary(323120);
+	sVar.addDate(12,24,3009);
+	sVar.addDept(5434122);
+	sVar.addSupervisor("Big Soss");
+	sVar.addPercent(10);
+	sVar.addyears(3);
+
+
+}
+

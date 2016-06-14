@@ -1,0 +1,64 @@
+
+-------------------------------------------------------------------------------------------------------------------	
+NAME		EmployeeID	Phone		Age	Gender	JobTitle	Salary	 HireDate	
+Jimmy Fallon	12345		9495551234	40	M	Comedian  	100000	  8/31/2014
+
+
+-------------------------------------------------------------------------------------------------------------------	
+NAME		EmployeeID	Phone		Age	Gender	JobTitle	Salary	 HireDate	
+Sam Software	54321		8191234567	21	M	Programer 	223000	  12/24/2014
+
+
+		Department	Supervisor	Raise	C++	Java 
+Sam Software	5432122		Joe Boss	 4	 YES	 NO
+
+
+ ++++++ Phone ++++ ++++++ 
+Not Equal
+
+ ++++++ +++++ ++++ Number 
+
+False by Overloading
+-------------------------------------------------------------------------------------------------------------------	
+NAME		EmployeeID	Phone		Age	Gender	JobTitle	Salary	 HireDate	
+Jimmy Fallon	12345		18188181111	40	M	Comedian  	100000	  8/31/2014
+
+
+-------------------------------------------------------------------------------------------------------------------	
+NAME		EmployeeID	Phone		Age	Gender	JobTitle	Salary	 HireDate	
+Sam Software	54321		18188181111	21	M	Programer 	223000	  12/24/2014
+
+
+		Department	Supervisor	Raise	C++	Java 
+Sam Software	5432122		Joe Boss	 4	 YES	 NO
+
+
+ ++++++ Phone ++++ ++++++ 
+
+Equal Numbers
+Jimmy Fallon
+Sam Software
+Equal Numbers
+
+ ++++++ +++++ ++++ Number 
+
+True by Overload Checking
+ Added 3 
+
+-------------------------------------------------------------------------------------------------------------------	
+NAME		EmployeeID	Phone		Age	Gender	JobTitle	Salary	 HireDate	
+Jimmy Fallon	12345		18188181111	43	M	Comedian  	100000	  8/31/2014
+
+
+ Added 15 
+
+-------------------------------------------------------------------------------------------------------------------	
+NAME		EmployeeID	Phone		Age	Gender	JobTitle	Salary	 HireDate	
+Jimmy Fallon	12345		18188181111	58	M	Comedian  	100000	  8/31/2014
+
+
+-------------------------------------------------------------------------------------------------------------------	
+NAME		EmployeeID	Phone		Age	Gender	JobTitle	Salary	 HireDate	
+Jimmy Fallon	12345		18188181111	58	M	Comedian  	100000	  8/31/2014
+
+Enter name : Enter ID : Enter Number : 

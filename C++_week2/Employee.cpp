@@ -14,18 +14,20 @@
 using namespace std;
 
 Employee::Employee() {
-	// TODO Auto-generated constructor stub;
+	// Creating the deafult constructor Values
 
-	string nname="Test Atest";
-	int nempID=100001;
-	long int nphoneNum=11111111;
-	int nage=11;
-	string ngender="F";
-	string njTitle="Testing";
-	long int nsalary=10000;
-	int a=1;
-	int b=11;
-	int c=1970;
+	string nname="Jimmy Fallon";
+	int nempID=12345;
+	long int nphoneNum=9495551234;
+	int nage=40;
+	string ngender="M";
+	string njTitle="Comedian";
+	long int nsalary=100000;
+	int a=8;
+	int b=31;
+	int c=2014;
+
+
 	name=nname;
 	empID=nempID;
 	phoneNum=nphoneNum;
@@ -38,7 +40,7 @@ Employee::Employee() {
 }
 
 Employee::Employee(string nname,int nempID,long int nphoneNum,int nage,string ngender,string njTitle,long int nsalary,int a,int b,int c) {
-	// TODO Auto-generated constructor stub
+	// Non Deafult constructor
 	 name=nname;
 	 empID=nempID;
 	 phoneNum=nphoneNum;
@@ -50,89 +52,83 @@ Employee::Employee(string nname,int nempID,long int nphoneNum,int nage,string ng
 
 }
 
-void Employee::addName(string nname){
+void Employee::addName(string nname){ /*Assingning to internal private variable*/
 	  name=nname;
 
 }
 
-void Employee::getName(){
+void Employee::getName() const{
 	  cout<<left<<name;
 
 }
 
 
-void Employee::addId(int nempID){
+void Employee::addId(int nempID){  /*Assingning to internal private variable*/
 	empID=nempID;
 
 }
 
-void Employee::getId(){
+void Employee::getId() const{
 	cout<<left<<empID;
 
 }
 
-void Employee::addPhone(long int  nphoneNum){
+void Employee::addPhone(long int  nphoneNum){  /*Assingning to internal private variable*/
 	 phoneNum=nphoneNum;
 
 
 
 }
-/*
-void Employee::getPhone(){
-	 cout<<left<<phoneNum;
 
-}
-*/
-
-long int Employee::getPhone(){
+long int Employee::getPhone() const{
 	 return phoneNum;
 
 }
-void Employee::addAge(int nage){
+void Employee::addAge(int nage){  /*Assingning to internal private variable*/
 	 age=nage;
 
 }
 
-int Employee::getAge(){
+int Employee::getAge() const{
 	 return age;
 
 }
 
-void Employee::addGender(string ngender){
+void Employee::addGender(string ngender){  /*Assingning to internal private variable*/
 	gender=ngender;
 }
 
-void Employee::getGender(){
+void Employee::getGender() const{
 	cout<<left<<gender;
 
 }
 
-void Employee::addTitle(string njTitle){
+void Employee::addTitle(string njTitle){  /*Assingning to internal private variable*/
 	 jTitle=njTitle;
 
 	}
 
-void Employee::getTitle(){
+void Employee::getTitle() const{
 	 cout<<left<<setw(10)<<jTitle;
 
 	}
 
-void Employee::addSalary(long int nsalary){
+void Employee::addSalary(long int nsalary){  /*Assingning to internal private variable*/
 	 salary=nsalary;
 	}
 
-void Employee::getSalary(){
+void Employee::getSalary() const{
 	 cout<<left<<salary;
 	}
 
 
-void Employee::addDate(int a,int b,int c){
+void Employee::addDate(int a,int b,int c){  /*Assingning to internal private variable*/
 	Date temp(a,b,c);
 	hiredate=temp;
 
 	}
 
-void Employee::getDate(){
+void Employee::getDate()const{
 
 	hiredate.printDate();
 
@@ -140,7 +136,7 @@ void Employee::getDate(){
 
 
 
-void Employee::print(){
+void Employee::print() const{
 
 	cout<< endl<<"-------------------------------------------------------------------------------------------------------------------\t" <<endl;
 	cout << "NAME\t\t"<<left<<"EmployeeID\t"<<left<<"Phone\t\t"<<left <<"Age\t"<<left<<"Gender\t"<<left<<"JobTitle\t"<<left<<"Salary\t "<<left<<"HireDate\t"<<endl;
@@ -165,20 +161,21 @@ void Employee::print(){
 }
 
 
-void Employee::addIntAge(int b){
+void Employee::addIntAge(int b){ //add the b to the current age
      age=this->age+b;
+     cout<<"\n Added "<<b<<" "<<endl;
 }
 
 
-bool Employee::operator==(Employee b){
-	 if (getPhone()==b.getPhone())
+bool Employee::operator==(Employee b){  //Internal overload function for the == sign
+	 if (getPhone()==b.getPhone())  //Checks equality
 		 return true;
 	 else
 		 return false;
 
 }
 
-Employee Employee::operator+(int b){
+Employee Employee::operator+(const int& b){   //Internal overload function for the + sign
 	addIntAge(b);
 	Employee mock;
 	mock.name=this->name;
@@ -193,13 +190,11 @@ Employee Employee::operator+(int b){
 }
 
 Employee::~Employee() {
-	// TODO Auto-generated destructor stub
+
 }
 
 
-
-
-void checkNum(Employee left, Programmer right ){
+void checkNum(Employee left, Programmer right ){ /*Friend function laying outside*/
 
 	   cout<<"\n ++++++ Phone ++++ ++++++ "<<endl;
 	   if  (left.getPhone() == right.getPhone()){
@@ -217,7 +212,7 @@ void checkNum(Employee left, Programmer right ){
 }
 
 
-ostream& operator<<(ostream& out, Employee temp){
+ostream& operator<<(ostream& out, Employee temp){  //Overloaded operator fot the cout<<
 	out<< endl<<"-------------------------------------------------------------------------------------------------------------------\t" <<endl;
 		out << "NAME\t\t"<<left<<"EmployeeID\t"<<left<<"Phone\t\t"<<left <<"Age\t"<<left<<"Gender\t"<<left<<"JobTitle\t"<<left<<"Salary\t "<<left<<"HireDate\t"<<endl;
 
@@ -245,7 +240,7 @@ ostream& operator<<(ostream& out, Employee temp){
 
 
 
-istream& operator>>(istream& in, Employee& input){
+istream& operator>>(istream& in, Employee& input){ //Overloaded operator for cin >>
 
 
 	string nname;

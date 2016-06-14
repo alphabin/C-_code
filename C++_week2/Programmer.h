@@ -7,9 +7,7 @@
 
 #ifndef PROGRAMMER_H_
 #define PROGRAMMER_H_
-
 #include "Employee.h"
-
 #include <iostream>
 #include <iostream>
 
@@ -22,31 +20,31 @@ public:
 	Programmer();
 	Programmer(string,int,long int, int,string,string,long int,int,int,int, long int,string,int, string ,string );
 
-	void addDept(long int);
-	void addSupervisor(string);
-	void addPercent(int);
-	void cProgram(string);
-	void jProgram(string);
+	void addDept(long int); //function to add the Department to the data set
+	void addSupervisor(string); //function to add the Supervisor to the data set
+	void addPercent(int); //Function to add the Percent to the data set
+	void cProgram(string); //Function to add if they know C++
+	void jProgram(string); //Function to add if they Know Java
 
-	void getDept();
-	void getSupervisor();
-	void getPercent();
-	void getcProgram();
-	void getjProgram();
-	void print();
+	void getDept() const; //Not changing Just access only member function
+	void getSupervisor() const;  //Not changing Just access member function
+	void getPercent() const;  //Not changing Just access member function
+	void getcProgram() const;  //Not changing Just access member function
+	void getjProgram() const;  //Not changing Just access member function
+	void print() const;  //Not changing Just access member function
 
 	virtual ~Programmer();
 
 
-   friend void checkNum(Employee, Programmer );
+    friend void checkNum(Employee, Programmer ); //Friend to check the Employee and Programmer
 
 private:
-
-	long int deptNum;
-	string superName;
-	int percentL;
-	string cPProgram;
-	string jPProgram;
+    //All the others needed will be inherited from Employee
+	long int deptNum;   //Private to only the Programmer
+	string superName;	//Private to only the Programmer
+	int percentL;		//Private to only the Programmer
+	string cPProgram;	//Private to only the Programmer
+	string jPProgram;	//Private to only the Programmer
 
 };
 #endif /* PROGRAMMER_H_ */

@@ -26,7 +26,7 @@ Date::Date(int nday,int nmonth,int nyear) {
 }
 
 
-void Date::printDate(){
+void Date::printDate() const{
 	  cout <<"  "<< day << "/" << month << "/"<<year<<endl;
 
 };

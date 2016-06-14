@@ -1,0 +1,76 @@
+/*
+ * Employee.h
+ *
+ *  Created on: Jun 8, 2016
+ *      Author: CCahangama
+ */
+
+
+//This shall serve as the base class
+
+#ifndef EMPLOYEE_H_
+#define EMPLOYEE_H_
+
+#include "Date.h"
+#include <string>
+#include <iostream>
+
+using namespace std;
+
+class Employee{
+public:
+	Employee();
+	Employee(string,int,long int, int,string,string,long int,int,int,int);
+
+	friend ostream& operator<<(ostream&, const Employee);
+	friend istream& operator>>(istream&, Employee &);
+
+	virtual ~Employee();
+
+	void addName(string);
+	void addId(int);
+	void addPhone(long int);
+	void addAge(int);
+	void addGender(string);
+	void addTitle(string);
+	void addSalary(long int);
+	void addDate(int,int,int);
+    void addIntAge(int);
+	void getDate() const;
+	void getSalary() const;
+	void getTitle() const;
+	void getGender() const;
+
+	int getAge() const; //Better Return types for Assignment 4
+	long int getPhone() const;
+	void getId() const;
+	void getName() const;
+
+
+
+    bool operator==(Employee);
+    Employee operator+(const int &);
+
+
+    void print() const;
+
+
+
+
+private:
+    string name;  //Private to access only by the member functions
+    int empID; //Private to access only by the member functions
+    long int phoneNum; //Private to access only by the member functions
+    int age; //Private to access only by the member functions
+    string jTitle; //Private to access only by the member functions
+    string gender; //Private to access only by the member functions
+    long int salary; //Private to access only by the member functions
+    int month; //Private to access only by the member functions
+    int day; //Private to access only by the member functions
+    int year; //Private to access only by the member functions
+    Date hiredate; //Private to access only by the member functions
+
+
+};
+
+#endif /* EMPLOYEE_H_ */

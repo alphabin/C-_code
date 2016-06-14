@@ -15,15 +15,15 @@ using namespace std;
 class SoftArchitect:public Programmer{
 
 public:
-	SoftArchitect();
-	SoftArchitect(string,int,long int, int,string,string,long int,int,int,int, long int,string,int,int);
+	SoftArchitect();  //Deafult Constructor
+	SoftArchitect(string,int,long int, int,string,string,long int,int,int,int, long int,string,int,int); //Non-Deafult constructor
 	virtual ~SoftArchitect();
 
-	void addyears(int);
-	void getyears();
-	void print();
+	void addyears(int); // The the years to Soft architects
+	void getyears() const;
+	void print() const;
 private:
-	int years;
+	int years;  //Private to only the SoftArchitect
 };
 
 #endif /* SOFTARCHITECT_H_ */
