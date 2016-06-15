@@ -1,0 +1,110 @@
+
+
+Printing the Initial Cases
+
+-------------------------------------------------------------------------------------------------------------------	
+NAME		EmployeeID	Phone		Age	Gender	JobTitle	Salary	 HireDate	
+Jimmy Fallon	12345		9495551234	40	M	Comedian  	100000	  8/31/2014
+
+
+-------------------------------------------------------------------------------------------------------------------	
+NAME		EmployeeID	Phone		Age	Gender	JobTitle	Salary	 HireDate	
+Sam Software	54321		8191234567	21	M	Programer 	223000	  12/24/2014
+
+
+		Department	Supervisor	Raise	C++	Java 
+Sam Software	5432122		Joe Boss	 4	 YES	 NO
+
+
+
+Checking the truth Equality from member function the initial Cases
+
+ ++++++ Phone ++++ ++++++ 
+
+	Not Equal
+		Jimmy Fallon
+		Sam Software
+
+ ++++++ Number +++++ ++++ 
+
+ Checking the truth Equality from overloading the initial Cases
+
+	False by Overloading
+
+Adding the same number to from member function the initial Cases 18188181111
+
+-------------------------------------------------------------------------------------------------------------------	
+NAME		EmployeeID	Phone		Age	Gender	JobTitle	Salary	 HireDate	
+Jimmy Fallon	12345		18188181111	40	M	Comedian  	100000	  8/31/2014
+
+
+-------------------------------------------------------------------------------------------------------------------	
+NAME		EmployeeID	Phone		Age	Gender	JobTitle	Salary	 HireDate	
+Sam Software	54321		18188181111	21	M	Programer 	223000	  12/24/2014
+
+
+		Department	Supervisor	Raise	C++	Java 
+Sam Software	5432122		Joe Boss	 4	 YES	 NO
+
+
+
+Checking the truth Equality from member function the initial Cases
+
+ ++++++ Phone ++++ ++++++ 
+
+	Equal Numbers
+		Jimmy Fallon
+		Sam Software
+
+ ++++++ Number +++++ ++++ 
+
+
+Checking the truth Equality from member function the initial Cases
+
+	True by Overload Checking
+
+
+Adding years to age using the addIntAge member cases
+
+ Added 3 
+
+-------------------------------------------------------------------------------------------------------------------	
+NAME		EmployeeID	Phone		Age	Gender	JobTitle	Salary	 HireDate	
+Jimmy Fallon	12345		18188181111	43	M	Comedian  	100000	  8/31/2014
+
+
+
+Adding years to age using the + operator member cases
+
+ Added 15 
+
+-------------------------------------------------------------------------------------------------------------------	
+NAME		EmployeeID	Phone		Age	Gender	JobTitle	Salary	 HireDate	
+Jimmy Fallon	12345		18188181111	58	M	Comedian  	100000	  8/31/2014
+
+
+
+To Directly Print out using the cout << operator
+
+-------------------------------------------------------------------------------------------------------------------	
+NAME		EmployeeID	Phone		Age	Gender	JobTitle	Salary	 HireDate	
+Jimmy Fallon	12345		18188181111	58	M	Comedian  	100000	  8/31/2014
+
+
+
+To Directly Take in values using the cin >> operator
+Enter name : Chatura Ahan
+Enter ID : 12384
+Enter Number : 9098762341
+Enter Age : 23
+Enter Gender : M
+Enter Title : Gamer
+Enter Salary : 9000000
+Enter Month : 03
+Enter Day : 14
+Enter Year : 2000
+
+-------------------------------------------------------------------------------------------------------------------	
+NAME		EmployeeID	Phone		Age	Gender	JobTitle	Salary	 HireDate	
+Chatura Ahan	12384		9098762341	23	M	Gamer     	9000000	  3/14/2000
+
