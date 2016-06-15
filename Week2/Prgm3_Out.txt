@@ -61,4 +61,8 @@ Jimmy Fallon	12345		18188181111	58	M	Comedian  	100000	  8/31/2014
 NAME		EmployeeID	Phone		Age	Gender	JobTitle	Salary	 HireDate	
 Jimmy Fallon	12345		18188181111	58	M	Comedian  	100000	  8/31/2014
 
-Enter name : Enter ID : Enter Number : 
+Enter name : Enter ID : Enter Number : Enter Age : Enter Gender : Enter Title : Enter Salary : Enter Month : Enter Day : Enter Year : 
+-------------------------------------------------------------------------------------------------------------------	
+NAME		EmployeeID	Phone		Age	Gender	JobTitle	Salary	 HireDate	
+Chatura Ahangama	1232		18182342342	0		          	140734660477544	  32767/1467089512/32767
+
