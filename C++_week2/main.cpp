@@ -17,106 +17,74 @@
 
 using namespace std;
 
-void dataTest(Employee &,Programmer &,SoftArchitect&);
+void dataTest(Employee &,Programmer &);
 
 int main()
 {
 
-  //Populating the data for the Employees
-  Employee Jimmy;  //Employee with the deafult constructor
-  Jimmy.print();   //Printing the results of 'normal' deafult constructor
+  Employee Jimmy;  //Employee with the deafault constructor
+  Programmer Sam; //Programmer with the default constructor
 
-  //Populating the data for the Programmers
-  Programmer Sam; // Programmer default construct
-  Sam.print(); // Print Programmer default construct
-
-  //False Case Check
-  checkNum(Jimmy,Sam); //Calling the member function to check
-  if (Jimmy == Sam) //Check by overloading
-	  cout<<endl<<"True by Overload Checking";
-  else
-	  cout<<endl<<"False by Overloading";
-
-  //True Case
-  Jimmy.addPhone(18188181111); //Assign the same number
-  Jimmy.print();
-  Sam.addPhone(18188181111);  //Assign the same number
-  Sam.print();
-
-
-  //True Case Check
-  checkNum(Jimmy,Sam); //Calling the member function to check
-   if (Jimmy == Sam) //Check by overloading
- 	  cout<<endl<<"True by Overload Checking";
-   else
- 	  cout<<endl<<"False by Overload Checking";
-
-
-
-  Jimmy.addIntAge(3); //Add 3 to Jimmys Age
-  Jimmy.print();
-
-
-  Jimmy=Jimmy+15; //Add 15 to Jimmys Age
-  Jimmy.print();
-
-
-
-  cout<<Jimmy;
-
-  Employee tests;
-  cin>>tests;
-  tests.print();
+  dataTest(Jimmy,Sam); //Check function to test all the conditions in Assignmnet 4
 
 };
 
 
+
 //Test function that modifies the input of each class type, the order is important
-void dataTest(Employee & eVar,Programmer & pVar ,SoftArchitect & sVar){
+void dataTest(Employee & Jimmy,Programmer & Sam ){
+	 cout <<"\n\nPrinting the Initial Cases" <<endl;
+	  //Populating the data for the Employees
+	  Jimmy.print();   //Printing the results of 'normal' deafult constructor
+
+	  //Populating the data for the Programmers
+	  Sam.print(); // Print Programmer default construct
+
+	  //False Case Check
+	  cout <<"\n\nChecking the truth Equality from member function the initial Cases" <<endl;
+	  checkNum(Jimmy,Sam); //Calling the member function to check
 
 
-	cout<<"\n\n\t\t|Test Mode Enabled|"<<endl;
-	cout<<"\nChanging the Default Constructor For Employee"<<endl ;
+	  cout <<"\n Checking the truth Equality from overloading the initial Cases" <<endl;
+	  if (Jimmy == Sam) //Check by overloading
+		  cout<<endl<<"\tTrue by Overload Checking"<<endl;
+	  else
+		  cout<<endl<<"\tFalse by Overloading"<<endl;
 
-	eVar.addName("Sali Patty");
-	eVar.addId(10001);
-	eVar.addPhone(8111112127);
-	eVar.addAge(23);
-	eVar.addGender("F");
-	eVar.addTitle("Hacked");
-	eVar.addSalary(1111000);
-	eVar.addDate(1,1,2001);
+	  cout <<"\nAdding the same number to from member function the initial Cases 18188181111" <<endl;
+	  //True Case
+	  Jimmy.addPhone(18188181111); //Assign the same number
+	  Jimmy.print();
+	  Sam.addPhone(18188181111);  //Assign the same number
+	  Sam.print();
 
-	cout<<"Changing the Default Constructor For Programmer"<<endl ;
+	  cout <<"\n\nChecking the truth Equality from member function the initial Cases" <<endl;
+	  //True Case Check
+	   checkNum(Jimmy,Sam); //Calling the member function to check
 
-	pVar.addName("Mani Patty");
-	pVar.addId(20002);
-	pVar.addPhone(1111112121);
-	pVar.addAge(24);
-	pVar.addGender("M");
-	pVar.addTitle("Hacked");
-	pVar.addSalary(1221000);
-	pVar.addDate(1,1,2001);
-	pVar.addDept(5231122);
-	pVar.addSupervisor("Goe Boss");
-	pVar.addPercent(100);
-	pVar.cProgram("YES");
-	pVar.jProgram("YES");
+	   cout <<"\n\nChecking the truth Equality from member function the initial Cases" <<endl;
+	   if (Jimmy == Sam) //Check by overloading
+	 	  cout<<endl<<"\tTrue by Overload Checking"<<endl;
+	   else
+	 	  cout<<endl<<"\tFalse by Overload Checking"<<endl;
 
-	cout<<"Changing the Default Constructor for Architect"<<endl ;
 
-	sVar.addName("Cheesy Patty");
-	sVar.addId(82312);
-	sVar.addPhone(1291234444);
-	sVar.addAge(12);
-	sVar.addGender("M");
-	sVar.addTitle("Hack-tect");
-	sVar.addSalary(323120);
-	sVar.addDate(12,24,3009);
-	sVar.addDept(5434122);
-	sVar.addSupervisor("Big Soss");
-	sVar.addPercent(10);
-	sVar.addyears(3);
+	  cout <<"\n\nAdding years to age using the addIntAge member cases" <<endl;
+	  Jimmy.addIntAge(3); //Add 3 to Jimmys Age
+	  Jimmy.print();
 
+
+	  cout <<"\n\nAdding years to age using the + operator member cases" <<endl;
+	  Jimmy=Jimmy+15; //Add 15 to Jimmys Age
+	  Jimmy.print();
+
+
+	  cout<< "\n\nTo Directly Print out using the cout << operator" <<endl;
+	  cout<<Jimmy;
+
+	  cout<< "\n\nTo Directly Take in values using the cin >> operator" <<endl;
+	  Employee tests;
+	  cin>>tests;
+	  tests.print();
 
 }

@@ -197,18 +197,28 @@ Employee::~Employee() {
 void checkNum(Employee left, Programmer right ){ /*Friend function laying outside*/
 
 	   cout<<"\n ++++++ Phone ++++ ++++++ "<<endl;
+
 	   if  (left.getPhone() == right.getPhone()){
 		   cout<<endl;
-		   cout <<"Equal Numbers"<<endl;
+		   cout <<"\tEqual Numbers"<<endl;
+		   cout <<"\t\t";
 		   left.getName();
 		   cout<<endl;
+		   cout <<"\t\t";
 	   	   right.getName();
 	   	   cout<<endl;
-		   cout <<"Equal Numbers"<<endl;}
-	   else
-			cout<<"Not Equal"<<endl;
-
-	   cout<<"\n ++++++ +++++ ++++ Number "<<endl;
+	   }
+	   else{
+		   cout<<endl;
+			cout<<"\tNot Equal"<<endl;
+	   	   	cout <<"\t\t";
+			   left.getName();
+			   cout<<endl;
+			   cout <<"\t\t";
+		   	   right.getName();
+		   	   cout<<endl;
+	   }
+	   cout<<"\n ++++++ Number +++++ ++++ "<<endl;
 }
 
 
