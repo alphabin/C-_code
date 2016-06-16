@@ -87,6 +87,4 @@ void dataTest(Employee & Jimmy,Programmer & Sam ){
 	  cin>>tests;
 	  tests.print();
 
-
-
 }
