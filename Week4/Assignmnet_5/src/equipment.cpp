@@ -2,7 +2,8 @@
  * equipment.cpp
  *
  *  Created on: Jun 19, 2016
- *      Author: CCahangama
+ *      Author: Chatura Ahangama
+ *      Assignment :5
  */
 
 #include "equipment.h"
