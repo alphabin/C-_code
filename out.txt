@@ -1,0 +1,16 @@
+
+Running Tringle Test Cases :: 
+
+Area is :275.762
+
+Perimeter is :89
+
+Ends Tringle Test Cases :: 
+
+Running Rectangle Test Cases :: 
+
+Area is :600
+
+Perimeter is :100
+
+Ends Tringle Test Cases :: 
